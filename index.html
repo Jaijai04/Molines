@@ -1,3 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Coffee Haven</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+  scroll-behavior:smooth;
+}
+
+.card img{
+  height:220px;
+  object-fit:cover;
+}
+</style>
+
+</head>
+
+<body>
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
@@ -8,21 +34,98 @@
     </button>
 
     <div class="collapse navbar-collapse" id="menu">
-      
-      <!-- Menu Links -->
-      <ul class="navbar-nav ms-auto me-3">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu-section">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
-
-      <!-- Search Bar -->
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search coffee..." aria-label="Search">
-        <button class="btn btn-outline-light" type="submit">Search</button>
-      </form>
-
     </div>
   </div>
 </nav>
+
+<!-- Hero Section -->
+<div class="hero">
+  <div class="hero-overlay text-center">
+    <h1>Welcome to Coffee Haven</h1>
+    <p class="lead">Fresh coffee brewed every day ☕</p>
+    <button class="btn btn-warning">Order Now</button>
+  </div>
+</div>
+
+<!-- Menu Section -->
+<div id="menu-section" class="container mt-5">
+  <h2 class="text-center mb-4">Our Menu</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" class="card-img-top" alt="Cappuccino">
+        <div class="card-body text-center">
+          <h5 class="card-title">Cappuccino</h5>
+          <p class="card-text">Rich espresso with steamed milk.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" class="card-img-top" alt="Latte">
+        <div class="card-body text-center">
+          <h5 class="card-title">Latte</h5>
+          <p class="card-text">Smooth and creamy coffee drink.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" class="card-img-top" alt="Mocha">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mocha</h5>
+          <p class="card-text">Chocolate flavored espresso drink.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- About Section -->
+<div id="about" class="container mt-5 text-center">
+  <h2>About Us</h2>
+  <p>We serve freshly brewed coffee made with premium beans. Our goal is to give customers the best coffee experience.</p>
+</div>
+
+<!-- Contact Section -->
+<div id="contact" class="container mt-5 mb-5">
+  <h2 class="text-center">Contact Us</h2>
+
+  <form>
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Your Name" required>
+    </div>
+
+    <div class="mb-3">
+      <input type="email" class="form-control" placeholder="Your Email" required>
+    </div>
+
+    <div class="mb-3">
+      <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">Send Message</button>
+  </form>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3">
+  <p>© 2026 Coffee Haven</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
